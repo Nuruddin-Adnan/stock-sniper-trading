@@ -1,17 +1,12 @@
 .dashboard{
-   min-height: 100vh;
    background: url(../images/dashboard/dashboard-bg.png) no-repeat center center/cover;
-  
-   .main-content{
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-   
-      @media(max-width: 1199px){
-        display: block;
-        padding-top: 60px;
+   padding: 80px 0;
+      @media(max-width: 767px){
+        padding-top: 50px 0;
       }
-   
+
+   .main-content{
+  
       .section-header{
          h1{
             font-family: 'Century Gothic Bold';
