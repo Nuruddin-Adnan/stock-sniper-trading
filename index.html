@@ -900,5 +900,23 @@
 
   <script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
   <script src="assets/js/custom.js"></script>
+  <script>
+    // dropdown menu show/hide on hover start
+    (function () {
+      const dropdown = document.querySelector('.dropdown');
+      const navbarDropdown = document.querySelector('#navbarDropdown');
+      const dropdownMenu = document.querySelector('.dropdown-menu');
+
+      dropdown.addEventListener('mouseenter', function(){
+        navbarDropdown.classList.add('show');
+        dropdownMenu.classList.add('show');
+      })
+      dropdown.addEventListener('mouseleave', function(){
+        navbarDropdown.classList.remove('show');
+        dropdownMenu.classList.remove('show');
+      })
+    })();
+    // dropdown menu show/hide on hover end
+  </script>
 </body>
 </html>

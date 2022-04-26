@@ -32,7 +32,8 @@
                 <li><a class="dropdown-item" href="#">1 On 1 Session</a></li>
                 <li><a class="dropdown-item" href="#">Live Sessions</a></li>
                 <li><a class="dropdown-item" href="#">Economic Calender</a></li>
-                <li><a class="dropdown-item" href="#">Earning Reports</a></li>              </ul>
+                <li><a class="dropdown-item" href="#">Earning Reports</a></li>
+              </ul>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Memberships</a>
@@ -251,6 +252,24 @@
 
     }
   }
+
+  // dropdown menu show/hide on hover start
+  (function () {
+    const dropdown = document.querySelector('.dropdown');
+    const navbarDropdown = document.querySelector('#navbarDropdown');
+    const dropdownMenu = document.querySelector('.dropdown-menu');
+
+    dropdown.addEventListener('mouseenter', function(){
+      navbarDropdown.classList.add('show');
+      dropdownMenu.classList.add('show');
+    })
+    dropdown.addEventListener('mouseleave', function(){
+      navbarDropdown.classList.remove('show');
+      dropdownMenu.classList.remove('show');
+    })
+  })();
+  // dropdown menu show/hide on hover end
+  
   </script>
   <!-- ===// Script ended here -->
 </body>

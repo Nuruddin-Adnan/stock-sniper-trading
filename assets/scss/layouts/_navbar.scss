@@ -63,18 +63,29 @@
             }
 
             .dropdown-menu{
-               background: rgba($color-white, 0.3);
-               border: 1px solid $color-white;
+               padding: 0;
+               overflow: hidden;
+               background: #1d1d1f;
+               border: 1px solid rgba($color-white, 0.5);
                border-radius: 10px;
+
 
                .dropdown-item{
                   color: $color-white;
                   font-family: 'Century Gothic Regular';
                   font-size: 15px;
+                  padding: 7px 15px;
 
                   &:hover{
                      background: $color-red;
                   }
+               }
+
+               li:first-child .dropdown-item {
+                  padding-top: 10px;
+               }
+               li:last-child .dropdown-item {
+                  padding-bottom: 10px;
                }
             }
 
